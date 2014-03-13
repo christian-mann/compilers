@@ -31,6 +31,7 @@ def printTerm(t):
 		"T_INTEGER": "integer",
 		"T_REAL": "real",
 		"T_PROCEDURE": "procedure",
+                "T_FUNCTION": "function",
 		"T_BEGIN": "begin",
 		"T_END": "end",
 		"T_ASSIGNOP": ":=",
