@@ -44,13 +44,13 @@ tests/minimal.tree: tests/minimal.pas src/parser
 tests/blank.tree: tests/blank.pas src/parser
 	! src/parser tests/blank.pas 2> /dev/null
 tests/shenoi.tree: tests/shenoi.pas src/parser
-	src/parser tests/shenoi.pas
+	! src/parser tests/shenoi.pas
 tests/shenoi.tbl: tests/shenoi.pas src/parser
-	src/parser tests/shenoi.pas
+	! src/parser tests/shenoi.pas
 tests/minimal.lst: tests/minimal.pas src/parser
 	src/parser tests/minimal.pas
 tests/blank.lst: tests/blank.pas src/parser
 	! src/parser tests/blank.pas 2> /dev/null
 tests/shenoi.lst: tests/shenoi.pas src/parser
-	src/parser tests/shenoi.pas
+	! src/parser tests/shenoi.pas
 tests: tests/minimal.tree tests/blank.tree tests/shenoi.tree tests/minimal.lst tests/blank.lst tests/shenoi.lst
