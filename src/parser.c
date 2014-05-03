@@ -322,9 +322,9 @@ void consume(NonTerminal nt, Item *a0) {
 			switch(currTerm.type) {
 				case T_ID:
 					match(T_ID, a1); if(a1->error) goto nt_factor_synch;
+					consume(NT_FACTOR_, a2);
 					if(checkSymbolTable(a1->lexeme, false)) {
 						a2->in.type = checkSymbolTable(a1->lexeme, false)->type;
-						consume(NT_FACTOR_, a2);
 						a0->type = a2->type;
 					} else {
 						a0->errHere = true;
